@@ -1,0 +1,54 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #333;
+}
+.loading1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.circle{
+    position: relative;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation{
+    0% {background-color: rgba(218, 24, 24, 0.829); left: 0px; top: 0px;}
+    25% {background-color: rgba(128, 0, 128, 0.746); left: 50px; top: 0px;}
+    50% {background-color: rgba(0, 128, 0, 0.733); left: 50px; top: 50px;}
+    75% {background-color: rgb(31, 49, 212); left: 0px; top: 50px;}
+    100% {background-color: rgba(218, 24, 24, 0.829); left: 0px; top: 0px;}
+}
+.circle2{
+    position: absolute;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation-name: myanimation2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation2{
+    0% {background-color: rgb(31, 49, 212); left: 50px; top: 50px;}
+    25% {background-color: rgba(218, 24, 24, 0.829); left: 0px; top: 50px;}
+    50% {background-color: rgba(128, 0, 128, 0.746); left: 0px; top: 0px;}
+    75% {background-color: rgba(0, 128, 0, 0.733); left: 50px; top: 0px;}
+    100% {background-color: rgb(31, 49, 212); left: 50px; top: 50px;}
+}
+.circle2:hover{
+    background-color: yellow;
+}
+
